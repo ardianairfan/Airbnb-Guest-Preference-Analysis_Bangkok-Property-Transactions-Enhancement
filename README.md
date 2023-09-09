@@ -1,29 +1,43 @@
-# Capstone_Project_Modul_2
+# Airbnb Bangkok Accommodation Preference Analysis
 
-Latar Belakang
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Airbnb adalah platform daring yang memungkinkan individu atau pemilik properti untuk menyewakan akomodasi secara sementara berupa rumah, apartemen, vila, kamar, atau akomodasi lainnya kepada para tamu yang mencari tempat menginap. Airbnb memungkinkan para pemilik properti untuk mengiklankan ruang yang mereka miliki dan menentukan harga sewa, serta memberikan deskripsi, foto, dan informasi tentang fasilitas yang disediakan. Para tamu yang mencari akomodasi dapat menelusuri berbagai daftar properti di Airbnb, melihat detailnya, membaca ulasan dari tamu sebelumnya, dan melakukan reservasi secara online. Airbnb telah berkembang pesat sejak pendiriannya, dan saat ini tersedia di banyak negara di seluruh dunia termasuk di Bangkok, Thailand.
+## Background
 
-Dalam project ini, penulis memposisikan diri sebagai data analyst di Airbnb yang memiliki peran dalam menganalisis data yang digunakan untuk memberikan insight dan rekomendasi kepada para pemilik properti yang mengiklankan di Airbnb. Hasil analisa secara general berupa preferensi tamu dalam memilih akomodasi sewaan di Bangkok berdasarkan data popularitas tempat sewa akomodasi. Popularitas tempat sewa direpresentasikan dengan jumlah ulasan pelanggan/tamu. Produk  dengan  kondisi  "harga  tinggi  dan  jumlah ulasan  tinggi"  lebih  dipercaya  masyarakat  daripada  produk  dengan  "harga rendah  dan  jumlah  ulasan    rendah" (Jaikumar,  2019). Jumlah ulasan yang tinggi dapat dianggap sebagai bukti sosial bahwa produk atau layanan tersebut populer dan diminati oleh banyak orang dan hal ini dapat mempengaruhi keputusan pembelian dengan meningkatkan persepsi nilai dan popularitas produk atau layanan tersebut. Jumlah ulasan yang tinggi juga dapat memberikan rasa kepercayaan kepada calon pelanggan dimana ketika ada banyak ulasan dari pelanggan sebelumnya, calon pelanggan cenderung merasa lebih yakin bahwa tempat sewa tersebut dapat diandalkan dan memiliki kualitas yang baik. Dengan hasil analisa yang dapat disampaikan kepada para pemilik properti diharapkan dapat digunakan untuk membuat strategi bisnis sewa properti berdasarkan preferensi tamu sehingga dengan ini memungkinkan untuk meningkatkan transaksi di Airbnb dan relevan juga terhadap peningkatan revenue Airbnb.
+Airbnb is an online platform that allows individuals or property owners to rent accommodations such as houses, apartments, villas, rooms, or other lodging options to guests seeking a place to stay. Airbnb enables property owners to advertise their spaces, set rental prices, and provide descriptions, photos, and information about the amenities they offer. Guests looking for accommodations can browse various property listings on Airbnb, view details, read reviews from previous guests, and make reservations online. Airbnb has grown rapidly since its inception and is now available in many countries around the world, including Bangkok, Thailand.
 
+In this project, I assume the role of a data analyst at Airbnb, responsible for analyzing data to provide insights and recommendations to property owners who advertise on Airbnb. The analysis focuses on guest preferences when choosing rental accommodations in Bangkok based on the popularity of accommodations, represented by the number of guest reviews. It is widely recognized that products with "high prices and high reviews" are more trusted by consumers than products with "low prices and low reviews" (Jaikumar, 2019). A high number of reviews can be considered a social proof that a product or service is popular and in demand, influencing purchase decisions by enhancing the perceived value and popularity of the product or service. A high number of reviews also instills confidence in potential customers, as they tend to feel more assured when there are numerous reviews from previous customers, indicating reliability and quality. The results of this analysis, when shared with property owners, are expected to help formulate business strategies for property rentals based on guest preferences, ultimately leading to increased transactions on Airbnb and higher revenue.
 
-Problem Statement
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Problem Statement
 
-Airbnb ingin meningkatkan jumlah transaksi di platformnya dengan cara mempengaruhi para pemilik properti di Bangkok yang mengiklankan di Airbnb untuk merancang strategi bisnis sewa properti yang disesuaikan dengan preferensi pelanggan/tamu. Dari dataset, preferensi tamu dapat dilihat dari indikator jumlah ulasan yang mana banyaknya ulasan ini berpengaruh terhadap keputusan calon pelanggan untuk bertransaksi.
+Airbnb aims to increase the number of transactions on its platform by influencing property owners in Bangkok who advertise on Airbnb to design rental property business strategies tailored to guest preferences. Guest preferences can be assessed through indicators such as the number of reviews, which significantly influence potential guests' decisions to make bookings.
 
-Untuk mencapai tujuan tersebut, sebagai data analyst Airbnb akan mencoba menjawab pertanyaan berikut:
+To achieve this goal, as a data analyst at Airbnb, I will attempt to answer the following question:
 
-Bagaimana karakteristik tempat sewa akomodasi di Bangkok yang mengiklankan di Airbnb yang sesuai dengan preferensi pelanggan dalam menentukan keputusan untuk menyewa?
+**What are the characteristics of accommodation rentals in Bangkok listed on Airbnb that align with guest preferences when making rental decisions?**
 
+## Conclusion
 
-Kesimpulan
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Kesimpulan yang didapatkan dari EDA dataset 'Airbnb Listings Bangkok' adalah sebagai berikut:
-1. Vadhana, Khlong Toei, Huai Khwang, Ratchathewi, dan Bang Rak merupakan lima lokasi yang memiliki tempat sewa akomodasi terbanyak dengan proporsi sebesar 46.32% dari semua tempat akomodasi yang tersedia di Bangkok dan dari aspek popularitas Khlong Toei, Vadhana, dan Ratchatewi mendapatkan jumlah ulasan (1 tahun terakhir) terbanyak yaitu masing-masing sesuai urutan mendapatkan jumlah ulasan sebanyak 13502, 9671, dan 4426.
-2. Tipe kamar yang paling banyak disediakan di tiga lokasi terpopuler yaitu entire home/apt dengan proporsi 66.52% dari semua tipe kamar. Ketiga lokasi terpopuler ini memiliki urutan tipe kamar dengan jumlah ulasan terbanayak yaitu entire/apt, private room, hotel, dan shared room.
-3. Hari sewa minimum yang paling banyak ditawarkan oleh ketiga lokasi terpopuler adalah 1 hari, 2 hari, 3 hari, 7 hari, dan 30 hari. Ditinjau dari setiap tipe kamar, kebijakan minimal hari sewa sebanyak 1 malam paling banyak mendapat ulasan (2429 ulasan) dan paling banyak ditawarkan (47.87% dari total kamar yang disediakan). Kebijakan minimal sewa sebanyak 7 hari dan 30 hari hanya tersedia di tipe kamar entire home/apt dan private room.
-4. Dilihat dari aspek harga, tipe kamar entire home/apt memiliki harga dengan jumlah ulasan tertinggi di range 2050.2-3000.0 baht. Private room memiliki harga dengan jumlah ulasan tertinggi di range 499.999-950.0 baht. Hotel memiliki harga dengan jumlah ulasan tertinggi di range 1497.0-1990.0 baht. Shared room memiliki harga dengan jumlah ulasan tertinggi di range 499.999-506.25 baht.
-5. Empat dari lima pemilik properti -top 5% dari jumlah ulasan- yang memiliki keuntungan potensial terbanyak di lokasi terpopuler menyediakan tipe kamar entire home/apt saja, satu orang lainnya menyediakan tipe kamar entire home/apt sebanyak 87.10% dari semua total kamar yang dia sediakan.
+The conclusions drawn from the exploratory data analysis (EDA) of the 'Airbnb Listings Bangkok' dataset are as follows:
 
-URL Tableau: https://public.tableau.com/shared/GTWPBX8SM?:display_count=n&:origin=viz_share_link
+1. Vadhana, Khlong Toei, Huai Khwang, Ratchathewi, and Bang Rak are the top five locations with the highest number of accommodation rentals, accounting for 46.32% of all available accommodations in Bangkok. In terms of popularity, Khlong Toei, Vadhana, and Ratchathewi have received the highest number of reviews (in the last year) in descending order with 13,502, 9,671, and 4,426 reviews, respectively.
+2. The most commonly offered room type in the top three popular locations is 'entire home/apt,' accounting for 66.52% of all room types. The order of room types with the highest number of reviews in these top locations is 'entire home/apt,' 'private room,' 'hotel,' and 'shared room.'
+3. The most frequently offered minimum stay policy in the top three popular locations is 1 day, 2 days, 3 days, 7 days, and 30 days. In terms of room types, the 1-night minimum stay policy has the most reviews (2,429 reviews) and is offered the most (47.87% of all rooms). The 7-day and 30-day minimum stay policies are only available for entire home/apt and private room types.
+4. Examining pricing, the 'entire home/apt' room type has the highest number of reviews in the range of 2,050.2-3,000.0 baht. The 'private room' type has the highest number of reviews in the range of 499.999-950.0 baht. The 'hotel' type has the highest number of reviews in the range of 1,497.0-1,990.0 baht. The 'shared room' type has the highest number of reviews in the range of 499.999-506.25 baht.
+5. Four out of the top five property owners (top 5% based on the number of reviews) with the highest potential profits in the popular locations offer only 'entire home/apt' room types, while one owner offers 'entire home/apt' for 87.10% of all rooms they provide.
+
+## Recommendations
+
+Based on the conclusions above, here are some recommendations for property owners who are or will be advertising on Airbnb:
+
+1. In terms of popularity based on the number of reviews, property owners are recommended to offer accommodation rentals in the Khlong Toei, Vadhana, and Ratchathewi areas. These three areas are centrally located in Bangkok with good accessibility to various parts of the city. They are served by efficient transportation systems, including subway (MRT) stations and major road networks. The presence of convenient and accessible transportation makes these areas attractive to tourists and visitors who want to explore the city easily. Furthermore, these areas each have their own unique attractions for tourists and visitors. Therefore, offering accommodation rentals in these areas is a sound decision.
+
+2. 'Entire home/apt' room types significantly outperform other room types in terms of popularity based on the number of reviews. Property owners are advised to prioritize offering 'entire home/apt' room types. 'Shared room' types are considerably less popular compared to other room types, likely due to the preference of most guests for not sharing a room with others, making it less recommended for property owners to offer this room type.
+
+3. Property owners are encouraged to set a minimum stay policy of 1 night. For 'entire home/apt' and 'private room' types, which are suitable for longer stays, providing options for monthly rentals with special pricing can attract guests seeking extended accommodations.
+
+4. To maximize the potential for guests to choose their rental listings, property owners are recommended to price their accommodations within the popular price ranges for each room type, as detailed in the conclusions. Room facilities should be aligned with the offered prices to remain competitive and attractive compared to competitors.
+
+5. Reflecting on property owners who receive a high number of reviews and have the potential for high profits, property owners or investors with a higher budget are advised to focus on offering 'entire home/apt' room types to maximize potential profits.
+
+-----------------------
+
+This project provides valuable insights for property owners looking to optimize their listings on Airbnb and enhance their profitability by aligning their offerings with guest preferences in Bangkok.
